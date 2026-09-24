@@ -1,0 +1,2 @@
+export function ErrorMessage({ message, onRetry }) { return <div className="state error"><strong>Something went wrong</strong><span>{message}</span>{onRetry && <button className="btn secondary" onClick={onRetry}>Retry</button>}</div>; }
+export function EmptyMessage({ title='No records found', text='There is nothing to display yet.' }) { return <div className="state"><strong>{title}</strong><span>{text}</span></div>; }
